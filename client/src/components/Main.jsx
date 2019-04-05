@@ -54,7 +54,7 @@ class Main extends Component {
                 <tbody>
                   {this.props.data.map( (event, key) => (
                     <tr key={key}>
-                      <td>{event.ts}</td>
+                      <td>{Date(event.ts)}</td>
                       <td>{event.task}</td>
                       <td>{event.status}</td></tr>))}
                 </tbody>
